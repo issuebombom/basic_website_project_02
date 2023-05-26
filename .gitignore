@@ -178,3 +178,4 @@ pyrightconfig.json
 # etc.
 .vscode
 get_dummies.py
+.DS_Store
