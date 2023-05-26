@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link href="../static/css/minyoung.css" rel="stylesheet">
+  <script src="../static/js/minyoung.js"></script>
+
+  <title>My Introduction</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1 id="title">Super Simple Page</h1>
+  </div>
+  <div class="body">
+    <div class="body-container">
+      <div class="introduce">
+        <img src="../static/images/minyoung.png">
+        <div class="myinfo">
+          <h3>📌 소개합니다</h3>
+          <p>안녕하세요 백엔드 공부 중인 박민영입니다. <br />
+            이전에 파이썬으로 DS쪽 공부를 했었고, <br />
+            이번에 자바스크립트와 백엔드는 처음입니다. <br />
+            앞으로 어떤 분들과 만나게 될지 기대됩니다. <br />
+            앞으로 잘 부탁드립니다. <br />
+            <br />
+            <br />
+
+            <a href="https://issuebombom.tistory.com/" target="_blank">Blog </a><a href="https://github.com/issuebombom"
+              target="_blank">Github</a>
+          </p>
+        </div>
+      </div>
+      <h5>📝 코멘트 남기기</h5>
+      <div class="mypost" id="post-box">
+        <div class="input-group mb-3">
+          <input type="text" id="nickname" class="form-control" placeholder="닉네임 (최대 10자)" aria-label="nickname"
+            maxlength="10">
+          <input type="password" id="password" class="form-control" placeholder="비밀번호" aria-label="password">
+        </div>
+
+        <div class="input-group">
+          <textarea id="comment" class="form-control" placeholder="코멘트를 남겨주세요. (최대 400자)" aria-label="With textarea"
+            maxlength="400"></textarea>
+        </div>
+        <div class="mybtns">
+          <button onclick="posting()" type="button" class="btn btn-dark">등록</button>
+        </div>
+      </div>
+      <h5 class="title-list">📂 리스트 (0)</h5>
+      <div class="mycards" id="comment-list">
+
+      </div>
+      <div class="page-container">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination"></ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
