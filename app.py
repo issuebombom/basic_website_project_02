@@ -2,10 +2,15 @@ from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient, DESCENDING
 from bson.objectid import ObjectId
 from datetime import datetime, timezone, timedelta
+from dotenv import load_dotenv
+import os
 
-client = MongoClient(
-    "mongodb+srv://issuebombom:test@testcluster.bcnelb9.mongodb.net/?retryWrites=true&w=majority"
-)
+# .env 파일 로드
+load_dotenv()
+
+# MongoDB URL 가져오기
+mongodb_url = os.getenv("MONGODB_URL")
+client = MongoClient(mongodb_url)
 db = client.dbspartaproject01
 app = Flask(__name__)
 
